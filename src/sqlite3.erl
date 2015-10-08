@@ -5,7 +5,7 @@
 %%% @version 1.0.0
 %%% @doc Library module for sqlite3
 %%%
-%%% @type table_id() = atom() | binary() | string()
+%%% @type table_id() = atom() | binary() | string().
 %%% @end
 %%%-------------------------------------------------------------------
 -module(sqlite3).
@@ -96,7 +96,7 @@ open(DbName) ->
 
 %%--------------------------------------------------------------------
 %% @spec open(DbName :: atom(), Options :: [option()]) -> {ok, Pid :: pid()} | ignore | {error, Error}
-%% @type option() = {file, DbFile :: string()} | in_memory | temporary
+%% @type option() = {file, DbFile :: string()} | in_memory | temporary.
 %%
 %% @doc
 %%   Opens a sqlite3 database creating one if necessary. By default the database
@@ -1246,7 +1246,7 @@ list_init([H|T]) -> [H|list_init(T)].
 %%     {no_on_conflict, NoOnConflictClause}.
 
 %%--------------------------------------------------------------------
-%% @type db() = atom() | pid()
+%% @type db() = atom() | pid().
 %% Functions which take databases accept either the name the database is registered under
 %% or the PID.
 %% @end
